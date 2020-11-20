@@ -1,0 +1,12 @@
+a = []
+b = []
+while a != "end":
+    a = input("请输入内容，以[end]结束:")
+    b.append(a)
+print("去重前:",b)
+b.remove("end")
+
+for i in b:
+    if b.count(i) > 1:
+        b.remove(i)
+print("去重后:",b)
